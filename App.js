@@ -5,14 +5,14 @@ import { StyleSheet, Text, View, Button } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Welcome to my landing page!</Text>
-      <Button
-        title="Press me!"
-        color = "#0E0E52"
-       
-
-       
-      />
+      <Text style={styles.h1}>Welcome to my landing page!</Text>
+      
+        <Button
+          title="LET'S START"
+          onPress={() => this.onPress()}
+          style={styles.button}
+          color="gray"
+        />
       <StatusBar style="auto" />
     </View>
   );
@@ -21,10 +21,13 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#78C0E0',
+    backgroundColor: 'black',
     alignItems: 'center',
-    paddingBottom: "10%",
     justifyContent: 'center',
     
+  },
+  h1: {
+    color: '#008F68',
+    fontSize: 25,
   },
 });
